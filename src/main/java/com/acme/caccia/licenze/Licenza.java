@@ -9,5 +9,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Licenza {
 	private long id;
-	
+	private String nome;
 }
