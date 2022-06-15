@@ -22,6 +22,6 @@ public class Citta {
 	@Column(length = 30, nullable = false)
 	private String citta;
 	@Column(length = 30, nullable = false)
-	private String provincia;
+	private String provincie;
 
 }
