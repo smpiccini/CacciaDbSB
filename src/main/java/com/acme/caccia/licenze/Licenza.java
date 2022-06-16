@@ -49,11 +49,10 @@ public class Licenza {
 	private String numeroLicenza;
 		
 	
-	@ToStringExclude
 	@ManyToOne
 	private Titolare titolare; 
 	
-	
+	@ToString.Exclude
 	@OneToMany(mappedBy = "licenza")
 	private List<Tesserino> tesserini;
 	

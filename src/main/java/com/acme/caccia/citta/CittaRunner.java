@@ -17,12 +17,13 @@ public class CittaRunner implements ApplicationRunner{
 	@Autowired
 	CittaRepository cittaRepo;
 	
-	private static int NUMERO_CITTA = 10;
+	public static int NUMERO_CITTA = 10;
 	
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 		Faker fk = new Faker(new Locale("it-IT"));
 		
+		System.out.println("========Runner Citta' Partito===========");
 		for (int i=0; i<NUMERO_CITTA;i++) {
 			Citta c = new Citta();
 			c.setCitta(fk.address().cityName());

@@ -14,6 +14,7 @@ import com.acme.caccia.titolari.Titolare;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Data
 @NoArgsConstructor
@@ -29,7 +30,7 @@ public class Citta {
 	@Column(length = 50, nullable = false)
 	private String provincia;
 	
-	
+	@ToString.Exclude
 	@OneToMany(mappedBy = "citta")
 	private List<Titolare> titolari;
 

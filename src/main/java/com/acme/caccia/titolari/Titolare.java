@@ -35,11 +35,10 @@ public class Titolare {
 	@Column(length=30, nullable = false)
 	private String cognome;
 	
-	@ToString.Exclude
 	@ManyToOne
 	private Citta citta;
 	
-
+	@ToString.Exclude
 	@OneToMany(mappedBy = "titolare")
 	private List<Licenza> licenze;
 

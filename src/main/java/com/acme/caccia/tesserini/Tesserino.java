@@ -33,7 +33,6 @@ public class Tesserino {
 	private int annoScadenza;
 		
 	
-	@ToString.Exclude
 	@ManyToOne
 	@JoinColumn(name="licenza_id")
 	private Licenza licenza;
