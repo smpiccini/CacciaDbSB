@@ -35,17 +35,17 @@ public class Licenza {
 	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	private long id;
 	
-	@Column(length=30, nullable = false)
+	@Column(length=50, nullable = false)
 	private String atc;
-	@Column(length=30, nullable = false)
+	@Column(length=50, nullable = false)
 	private String numeroSerieArma;
-	@Column(length=30, nullable = false)
+	@Column(length=50, nullable = false)
 	private String tipologiaPreda;
 	
 	@Column(nullable = false)
 	private int annoScadenza;
 	
-	@Column(length=30, nullable = false)
+	@Column(length=50, nullable = false)
 	private String numeroLicenza;
 		
 	

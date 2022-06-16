@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 public interface TitolareRepository 
 	extends PagingAndSortingRepository<Titolare, Long>{
 	
-	public List<Titolare> findByName(String n);
+	public List<Titolare> findByNome(String n);
 	
 	@Transactional
 	public List<Titolare> findByNomeContainingIgnoreCase(String n);

@@ -24,9 +24,9 @@ public class Citta {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	@Column(length = 30, nullable = false)
+	@Column(length = 50, nullable = false)
 	private String citta;
-	@Column(length = 30, nullable = false)
+	@Column(length = 50, nullable = false)
 	private String provincia;
 	
 	

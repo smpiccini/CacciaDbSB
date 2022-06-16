@@ -32,11 +32,11 @@ TitolareRepository titolareRepo;
 		System.out.println("========Runner Partito===========");
 		for (int i=0; i<30;i++) {
 			Licenza l = new Licenza();
-			l.setAtc(fk.idNumber().toString());
-			l.setNumeroSerieArma(fk.idNumber().toString());
+			l.setAtc(fk.address().cityName());
+			l.setNumeroSerieArma(fk.number().digits(10));
 			l.setTipologiaPreda(fk.pokemon().name());
 			l.setAnnoScadenza(fk.number().numberBetween(2020, 2025));
-			l.setNumeroLicenza(fk.idNumber().toString());
+			l.setNumeroLicenza(fk.number().digits(5));
 			Optional<Titolare> optTitolare=titolareRepo.findById(Long.valueOf(i));
 			if(optTitolare.isPresent()) {
 				l.setTitolare(optTitolare.get());
