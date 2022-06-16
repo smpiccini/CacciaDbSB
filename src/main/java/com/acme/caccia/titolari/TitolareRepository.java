@@ -15,5 +15,6 @@ public interface TitolareRepository
 	
 	@Transactional
 	public List<Titolare> findByNomeContainingIgnoreCase(String n);
-	public List<Titolare> findByNomeStartingWithIgnoreCaseAndCognomeContainingIgnoreCase(String n, String c);
-}
+	public List<Titolare> findByCognomeStartingWithIgnoreCase(String cognome);
+	}
+
